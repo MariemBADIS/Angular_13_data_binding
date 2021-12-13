@@ -1,1 +1,12 @@
-<h1>hello assignment number 4</h1>
+<h2>Hello this is a New game</h2>
+<br><br>
+<app-game-control
+  (intervalFired)="OnIntervalFired($event)">
+</app-game-control>
+<br><br>
+<app-odd *ngFor="let oddNumber of oddNumbers"
+          [number]="oddNumber">
+</app-odd>
+<app-even *ngFor="let evenNumber of evenNumbers"
+         [number]="evenNumber">
+</app-even>
